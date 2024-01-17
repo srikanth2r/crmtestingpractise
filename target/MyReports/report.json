@@ -1,0 +1,92 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2024-01-15T10:17:46.281Z",
+        "line": 21,
+        "name": "Login validation",
+        "description": "",
+        "id": "amazon-login-validation;login-validation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2132100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User logs into the application",
+            "match": {
+              "location": "stepdefinations.searchsteps.user_logs_into_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User enters username and password",
+            "match": {
+              "location": "stepdefinations.searchsteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1328800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User clicks on the login buton",
+            "match": {
+              "location": "stepdefinations.searchsteps.user_clicks_on_the_login_buton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should be logged in and should be in the home page with amazon logo",
+            "match": {
+              "location": "stepdefinations.searchsteps.user_should_be_logged_in_and_should_be_in_the_home_page_with_amazon_logo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User finds the \"ASUS\" laptop with price 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ASUS\"",
+                  "offset": 15
+                },
+                {
+                  "val": "100",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinations.searchsteps.user_finds_the_laptop_with_price(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon login validation",
+    "description": "",
+    "id": "amazon-login-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/amazonsearch.feature",
+    "tags": []
+  }
+]
